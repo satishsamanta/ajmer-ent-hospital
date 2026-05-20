@@ -152,7 +152,7 @@ export default function Home() {
             <h2 className="section-title">A true <span className="accent">multi-specialty</span> hospital</h2>
             <p className="section-sub">Beyond ENT, our hospital offers a wide range of specialist departments.</p>
           </Reveal>
-          <div className="grid grid-4" style={{ marginTop: 36 }}>
+          <div className="grid grid-4 dept-strip" style={{ marginTop: 36 }}>
             {departments.slice(0, 8).map((d, i) => (
               <Reveal key={d.name} delay={i * 60}>
                 <div className="card glass" style={{ padding: 22 }}>
