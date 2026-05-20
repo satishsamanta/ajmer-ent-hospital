@@ -80,7 +80,7 @@ export const entTreatments = [
 ]
 
 export const doctors = [
-  { name: 'Dr. Sikander', role: 'Chief ENT Surgeon & Director', qual: 'MBBS, MS (ENT)', photo: '/dr-sikander.jpg', text: 'Leads the hospital with extensive expertise in ear, nose and throat surgery and disease diagnosis.' },
+  { name: 'Dr. Sikander', role: 'Chief ENT Surgeon & Director', qual: 'MBBS, MS (ENT)', photo: `${import.meta.env.BASE_URL}dr-sikander.jpg`, text: 'Leads the hospital with extensive expertise in ear, nose and throat surgery and disease diagnosis.' },
   { name: 'ENT Specialist', role: 'ENT Surgeon', qual: 'MBBS, MS / DNB (ENT)', text: 'Proficient in ear, nose and throat surgery and comprehensive ENT disease diagnosis.' },
   { name: 'Consultant Physician', role: 'General Medicine', qual: 'MBBS, MD (Medicine)', text: 'Examination and treatment of diabetes, hypertension, infections and chronic illness.' },
   { name: 'Consultant Surgeon', role: 'General Surgery', qual: 'MBBS, MS / DNB (Surgery)', text: 'Performs general surgical procedures including hernia, appendix and gallbladder surgery.' },

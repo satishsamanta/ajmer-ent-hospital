@@ -9,7 +9,7 @@ export default function Footer() {
         <div className="footer-inner glass">
           <div className="footer-grid">
             <div>
-              <img src="/logo.webp" alt="Ajmer ENT Hospital" className="brand-logo" style={{ marginBottom: 14 }} />
+              <img src={`${import.meta.env.BASE_URL}logo.webp`} alt="Ajmer ENT Hospital" className="brand-logo" style={{ marginBottom: 14 }} />
               <p>{hospital.tagline}. Free treatment under the Chiranjeevi Scheme & Ayushman Bharat.</p>
             </div>
             <div>

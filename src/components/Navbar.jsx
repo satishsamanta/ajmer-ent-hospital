@@ -91,7 +91,7 @@ export default function Navbar() {
         {/* Main nav bar */}
         <div className="nav-mainbar glass">
           <Link to="/" className="brand" onClick={close}>
-            <img src="/logo.webp" alt="Ajmer ENT Hospital" className="brand-logo" />
+            <img src={`${import.meta.env.BASE_URL}logo.webp`} alt="Ajmer ENT Hospital" className="brand-logo" />
           </Link>
 
           <div className="nav-bar">
