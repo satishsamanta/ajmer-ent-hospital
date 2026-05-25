@@ -1,4 +1,4 @@
-import { Routes, Route, useLocation } from 'react-router-dom'
+import { Routes, Route, useLocation, Navigate } from 'react-router-dom'
 import { useEffect } from 'react'
 import WaterBackground from './components/WaterBackground'
 import Navbar from './components/Navbar'
@@ -34,7 +34,8 @@ export default function App() {
           <Route path="/about" element={<About />} />
           <Route path="/departments" element={<Departments />} />
           <Route path="/ent-services" element={<EntServices />} />
-          <Route path="/doctors" element={<Doctors />} />
+          <Route path="/doctor" element={<Doctors />} />
+          <Route path="/doctors" element={<Navigate to="/doctor" replace />} />
           <Route path="/facilities" element={<Facilities />} />
           <Route path="/patient-info" element={<PatientInfo />} />
           <Route path="/faqs" element={<Faqs />} />

@@ -17,7 +17,7 @@ export default function Footer() {
               <p><Link to="/about">About Us</Link></p>
               <p><Link to="/departments">Departments</Link></p>
               <p><Link to="/ent-services">ENT Services</Link></p>
-              <p><Link to="/doctors">Doctors</Link></p>
+              <p><Link to="/doctor">Doctor</Link></p>
             </div>
             <div>
               <h4>Patients</h4>

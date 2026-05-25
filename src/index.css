@@ -308,7 +308,47 @@ img { max-width: 100%; display: block; }
 .card h3 { font-size: 1.16rem; margin-bottom: 8px; }
 .card p { color: var(--muted); font-size: 0.93rem; line-height: 1.6; }
 
-/* ===== Doctor avatar / photo ===== */
+/* ===== Doctor profile (single doctor page) ===== */
+.doc-profile {
+  display: grid; grid-template-columns: 360px 1fr; gap: 36px;
+  padding: 30px; align-items: stretch;
+}
+.doc-profile-photo {
+  width: 100%; height: 100%; min-height: 380px; max-height: 520px;
+  object-fit: cover; object-position: center top;
+  border-radius: 18px;
+  box-shadow: 0 18px 40px -16px rgba(15,39,71,0.55);
+}
+.doc-profile-body { display: flex; flex-direction: column; padding: 6px 4px; }
+.doc-profile-name {
+  font-size: clamp(1.8rem, 3.4vw, 2.4rem); font-weight: 800; letter-spacing: -0.02em;
+  margin: 8px 0 4px;
+}
+.doc-profile-qual {
+  font-family: 'Outfit', sans-serif; font-weight: 600;
+  color: var(--aqua-deep); margin-bottom: 14px;
+}
+.doc-profile-text { color: var(--muted); line-height: 1.7; }
+.doc-profile-chips {
+  display: flex; gap: 9px; flex-wrap: wrap; margin: 18px 0 22px;
+}
+.dpc {
+  display: inline-flex; align-items: center; gap: 7px;
+  padding: 7px 13px; border-radius: 999px;
+  font-family: 'Outfit', sans-serif; font-weight: 600; font-size: 0.82rem;
+  color: var(--blue-deep);
+  background: rgba(255,255,255,0.65);
+  border: 1px solid var(--glass-border);
+}
+.dpc svg { color: var(--aqua-deep); }
+.doc-profile-cta { display: flex; gap: 12px; flex-wrap: wrap; margin-top: auto; }
+
+@media (max-width: 820px) {
+  .doc-profile { grid-template-columns: 1fr; gap: 22px; }
+  .doc-profile-photo { min-height: 320px; max-height: 420px; }
+}
+
+/* legacy avatar styles (kept in case used elsewhere) */
 .doc-avatar {
   width: 96px; height: 96px; border-radius: 50%; margin: 0 auto 16px;
   display: grid; place-items: center; font-family: 'Outfit', sans-serif;

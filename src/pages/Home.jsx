@@ -4,7 +4,7 @@ import Icon from '../components/Icon'
 import CtaBanner from '../components/CtaBanner'
 import { hospital, highlights, schemes, entServices, departments } from '../data/content'
 
-const HERO_IMG = 'https://images.unsplash.com/photo-1631217868264-e5b90bb7e133?w=900&q=80'
+const HERO_IMG = `${import.meta.env.BASE_URL}hospital-building.webp`
 
 export default function Home() {
   return (

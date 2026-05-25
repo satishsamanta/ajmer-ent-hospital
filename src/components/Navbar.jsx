@@ -8,7 +8,7 @@ const links = [
   { to: '/about', label: 'About' },
   { to: '/departments', label: 'Departments' },
   { to: '/ent-services', label: 'ENT Services' },
-  { to: '/doctors', label: 'Doctors' },
+  { to: '/doctor', label: 'Doctor' },
   { to: '/facilities', label: 'Facilities' },
   { to: '/patient-info', label: 'Patient Info' },
   { to: '/contact', label: 'Contact' },
